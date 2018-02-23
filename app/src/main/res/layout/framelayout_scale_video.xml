@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hq.vlcplayer.view.widget.VLCControlView
+        android:id="@+id/frame_layout_scale"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000"
+        >
+
+        <com.hq.vlcplayer.view.widget.VLCScaleVideoView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--字幕的显示-->
+        <TextureView
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone" />
+
+        <!--暂时没有使用到暂停覆盖的封面-->
+        <ImageView
+            android:id="@+id/pause_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:visibility="gone"
+            />
+
+        <include layout="@layout/sample_video_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </com.hq.vlcplayer.view.widget.VLCControlView>
+
+</FrameLayout>

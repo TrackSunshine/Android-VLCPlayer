@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="org.videolan"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="20180120"
+    android:versionName="2.5.17" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="24" />
+
+</manifest>

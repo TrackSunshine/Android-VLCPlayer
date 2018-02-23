@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_layout_scale"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000"
+        >
+
+        <com.hq.vlcplayer.view.widget.VLCVideoView
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--字幕的显示-->
+        <TextureView
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+
+        <include layout="@layout/sample_video_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+</FrameLayout>
